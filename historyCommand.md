@@ -46,33 +46,33 @@ rpm.pbone.net   //若有未同步下来的包，在rpm.phone.net网站搜索下�
 
 ## mock编译工具
 
- useradd mockbuilder   //新建一用户，作为编译用户
+1. useradd mockbuilder   //新建一用户，作为编译用户
 
- usermod -a -G mock mockbuilder     //并放进mock用户组
+2. usermod -a -G mock mockbuilder     //并放进mock用户组
 
- su - mockbuilder    //注意：如果强行使用root身份执行mock命令，python将会抛出“RuntimeError: mock will not run from the root account”的错误。
-
-
-mock的配置文件在/etc/mock/目录下，系统默认内置了fedora,epel-等系统的配置文件，通过查看这些.cfg的配置文件，可以了解mock的原理，
-
-但现在我在龙梦的live-10系统/etc/mock/目录没有看到关于loongson龙芯的相关配置－－>>所以龙芯机没办法使用mock工具编译
-
-例：假如编译一个Fedora15 64位系统的软件包来举例（则对应的配置文件为：fedora-15-x86_64.cfg），相关的命令是：
-
- #mock -r fedora-15-x86_64 --init   //初始化，不需要加.cfg后缀
-
- #rebuild package-1.2-3.src.rpm     //开始编译过程
-
-初始化以后的最小化系统环境位于：/var/lib/mock/fedora-15-x86_64/root目录下，可以用chroot命令切换此最小化环境。
-
-编译后的日志和软件包会保存在：/var/lib/mock/fedora-15-x86_64/result。
+3. su - mockbuilder    //注意：如果强行使用root身份执行mock命令，python将会抛出“RuntimeError: mock will not run from the root account”的错误。
 
 
+4. mock的配置文件在/etc/mock/目录下，系统默认内置了fedora,epel-等系统的配置文件，通过查看这些.cfg的配置文件，可以了解mock的原理，
+
+5. 但现在我在龙梦的live-10系统/etc/mock/目录没有看到关于loongson龙芯的相关配置－－>>所以龙芯机没办法使用mock工具编译
+
+###### 例：假如编译一个Fedora15 64位系统的软件包来举例（则对应的配置文件为：fedora-15-x86_64.cfg），相关的命令是：
+
+1.#mock -r fedora-15-x86_64 --init   //初始化，不需要加.cfg后缀
+
+2. #rebuild package-1.2-3.src.rpm     //开始编译过程
+
+3. 初始化以后的最小化系统环境位于：/var/lib/mock/fedora-15-x86_64/root目录下，可以用chroot命令切换此最小化环境。
+
+4. 编译后的日志和软件包会保存在：/var/lib/mock/fedora-15-x86_64/result。
 
 
-第三步对源码包打成rpm包
 
-<使用rpmbuild编译打包>
+
+## 第三步对源码包打成rpm包
+
+### <使用rpmbuild编译打包>
 
 1. 首先设置用户，
 
