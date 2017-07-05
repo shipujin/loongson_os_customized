@@ -22,7 +22,7 @@ yum-utils //安装这个包是为了用到里面的工具“reposync”
 reposync -h //查看reposync 工具的帮助查看各个参数
 
 
-###同步软件仓库###
+## 同步软件仓库
 
 reposync -r fedora -p ./  //同步编译好的软件包
 
@@ -30,7 +30,7 @@ reposync -r fedora-source --source  //同步软件包的源代码
 
 
 
-###建立FTP服务器把将近１００Ｇ的文件传送到FTP###
+## 建立FTP服务器把将近１００Ｇ的文件传送到FTP
 
 ip a  //因未安装net-tools，所以无ifconfig命令　
 
@@ -44,7 +44,7 @@ rpm.pbone.net   //若有未同步下来的包，在rpm.phone.net网站搜索下�
 
 
 
-###mock编译工具###
+## mock编译工具
 
 useradd mockbuilder   //新建一用户，作为编译用户
 
