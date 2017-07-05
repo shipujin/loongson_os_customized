@@ -42,6 +42,8 @@ yumdownloader　packageName   //用yumdownloader命令下载packageName
 
 rpm.pbone.net   //若有未同步下来的包，在rpm.phone.net网站搜索下载
 
+
+
 ###mock编译工具###
 
 useradd mockbuilder   //新建一用户，作为编译用户
@@ -64,6 +66,7 @@ su - mockbuilder    //注意：如果强行使用root身份执行mock命令，py
 *:初始化以后的最小化系统环境位于：/var/lib/mock/fedora-15-x86_64/root目录下，可以用chroot命令切换此最小化环境。
 
 *:编译后的日志和软件包会保存在：/var/lib/mock/fedora-15-x86_64/result。
+
 
 
 
