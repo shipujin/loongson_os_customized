@@ -74,12 +74,12 @@ su - mockbuilder    //注意：如果强行使用root身份执行mock命令，py
 
 <使用rpmbuild编译打包>
 
-１．首先设置用户，
+1. 首先设置用户，
 
-２．你要编译打包哪个包，就先安装哪个包例如源码包“a2jmidid-8-8.fc21.src.rpm”
+2. 你要编译打包哪个包，就先安装哪个包例如源码包“a2jmidid-8-8.fc21.src.rpm”
 
-３．在编译用户下，安装“a2jmidid-8-8.fc21.src.rpm”，rpm -ivh a2jmidid-8-8.fc21.src.rpm
+3. 在编译用户下，安装“a2jmidid-8-8.fc21.src.rpm”，rpm -ivh a2jmidid-8-8.fc21.src.rpm
 
-４．安装后，发现打开“rpmbuild/SPECS/”目录出现“a2jmidid.spec”，在"rpmbuild/SOURCES/"目录里是源码文件，可修改它们对所要做的系统定制化做修改。
+4. 安装后，发现打开“rpmbuild/SPECS/”目录出现“a2jmidid.spec”，在"rpmbuild/SOURCES/"目录里是源码文件，可修改它们对所要做的系统定制化做修改。
 
-５．现在编译“a2jmidid.spec”，执行命令“rpmbuild -ba a2jmidid.spec”
+5. 现在编译“a2jmidid.spec”，执行命令“rpmbuild -ba a2jmidid.spec”
