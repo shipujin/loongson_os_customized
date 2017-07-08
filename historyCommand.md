@@ -8,7 +8,7 @@
 
 第四步：建立软件仓库，creatrepo建立本地仓库
 
-第六步：做成liveCD，ISO文件livecd-creator
+第五步：做成liveCD，ISO文件livecd-creator
 
 
 
