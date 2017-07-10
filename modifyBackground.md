@@ -28,9 +28,22 @@ yum provies */*background*
 图片图片
 
 可以看出包含“gnome-background-properties/”下控制壁纸脚本的文件，所包含在哪一个包内，这时就可以从同步的源码包里
-去找到包含“控制壁纸脚本文件”的包，
+去找到包含“控制壁纸脚本文件”的包，重复第三步。
 
 
+
+
+
+
+>第一步：同步fedora.repo的源，包和包的源代码，repo/source。
+
+>第二步：对包内文件的修改。
+
+>第三步：对修改好的源代码打成rpm包。
+
+>第四步：建立软件仓库，creatrepo建立本地仓库。
+
+>第五步：做成liveCD，ISO文件livecd-creator。
 
 
 
