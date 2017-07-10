@@ -23,15 +23,15 @@ reposync -h //查看reposync 工具的帮助查看各个参数
 
 
 ## 同步软件仓库
-
+```
 reposync -r fedora -p ./  //同步编译好的软件包
 
 reposync -r fedora-source --source  //同步软件包的源代码
-
+```
 
 
 ## 建立FTP服务器把将近１００Ｇ的文件传送到FTP
-
+```
 ip a  //因未安装net-tools，所以无ifconfig命令　
 
 scp lhosts root@192.168.30.233:~  //把目录下的lhosts发送到ip192.168.30.233的主机的root用户家目录
@@ -39,7 +39,7 @@ scp lhosts root@192.168.30.233:~  //把目录下的lhosts发送到ip192.168.30.2
 sudo scp -r fedora/ 192.168.30.142:/home/qwe/data/repo  //同上，把一个目录传到ip192.168.30.233的主机/home下的/qwe/data/repo目录
 
 yumdownloader　packageName   //用yumdownloader命令下载packageName
-
+```
 rpm.pbone.net   //若有未同步下来的包，在rpm.phone.net网站搜索下载
 
 
@@ -78,8 +78,14 @@ rpm.pbone.net   //若有未同步下来的包，在rpm.phone.net网站搜索下�
 
 2. 你要编译打包哪个包，就先安装哪个包例如源码包“a2jmidid-8-8.fc21.src.rpm”
 
-3. 在编译用户下，安装“a2jmidid-8-8.fc21.src.rpm”，rpm -ivh a2jmidid-8-8.fc21.src.rpm
-
+3. 在编译用户下，安装“a2jmidid-8-8.fc21.src.rpm”，
+```
+rpm -ivh a2jmidid-8-8.fc21.src.rpm
+```
 4. 安装后，发现打开“rpmbuild/SPECS/”目录出现“a2jmidid.spec”，在"rpmbuild/SOURCES/"目录里是源码文件，可修改它们对所要做的系统定制化做修改。
 
-5. 现在编译“a2jmidid.spec”，执行命令“rpmbuild -ba a2jmidid.spec”
+5. 现在编译“a2jmidid.spec”，执行命令:
+
+```
+rpmbuild -ba a2jmidid.spec
+```
