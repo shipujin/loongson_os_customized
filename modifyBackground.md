@@ -23,7 +23,12 @@
 ```
 yum provies */*background*
 ```
+输出结果为：
 
+图片图片
+
+可以看出包含“gnome-background-properties/”下控制壁纸脚本的文件，所包含在哪一个包内，这时就可以从同步的源码包里
+去找到包含“控制壁纸脚本文件”的包，
 
 
 
