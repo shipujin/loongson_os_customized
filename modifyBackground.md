@@ -7,7 +7,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
-    <wallpaper deleted="false">　　　　　　　　　　　　　　　　　　　　　　　　　　//其中<wallpaper deleted="false">作用是是否在设置里显示这张壁纸
+    <wallpaper deleted="false">　　　　　　　　　　　　　　　　　　　　　　　　　　
         <name>Fedora 21 Default ‒ Phoenix</name>
         <filename>/usr/share/backgrounds/f21/default/f21.xml</filename>
         <options>stretched</options>
