@@ -13,14 +13,18 @@
         <options>stretched</options>
     </wallpaper>
 </wallpapers>
-
 ```
-这个f21.xml文件里，<wallpaper deleted="false">作用是是否在设置里显示这张壁纸。之后代码，依次往下是名字、图片位置、选项为stretched或者zoom
+这个/usr/share/gnome-background-properties/下的f21.xml文件里，<wallpaper deleted="false">作用是是否在设置里显示这张壁纸。之后代码，依次往下是名字、图片位置、选项为stretched或者zoom。
 
 前期需要具备的修改壁纸的知识已大概了解，现准备修改源码包的内容。
 
 ## 二.正式开始对定制化壁纸修改，对源码包的修改
-首先已经知道
+首先已经知道要你需要修改的目标是“桌面背景图片”，之后你通过如下命令找到包含设置背景壁纸图片的脚本文件：
+```
+yum provies */*background*
+```
+
+
 
 
 
