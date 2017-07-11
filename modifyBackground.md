@@ -16,6 +16,7 @@ gnome-backgroundgson.bz.ta
         <options>stretched</options>
     </wallpaper>
 </wallpapers>
+
 ```
 **这个/usr/share/gnome-background-properties/下的f21.xml文件里，<wallpaper deleted="false">作用是是否在设置里显示这张壁纸。之后代码，依次往下是名字、图片位置、选项为stretched或者zoom。**
 
@@ -28,6 +29,7 @@ yum provides */*background*
 ```
 
 输出结果为：
+
 &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; <img src="https://github.com/lina-not-linus/loongson_os_customized/blob/master/codeSnippet/provides_background.png" alt="GitHub" title="GitHub,Social Coding" width="600" height="310" />
 
 
@@ -42,41 +44,34 @@ sudo scp root@192.168.30.145:/home/qwe/data/repo/fedora-source/gnome-background-
 ```
 rpm -ivh gnome-background-loongson.src.rpm
 ```
-会发现在rpmbuild目录下的SOURCES的目录下已出现gnome-background-loongson.bz.tar源码包，解压后对此包修改：
+会发现在rpmbuild目录下的SOURCES的目录下已出现gnome-background-loongson.bz.tar源码包，与在SPECS目录下出现gnome-background-loongson.spec文件，解压SOURCES目录下的gnome-background-loongsonbz.tar包，并做出对此包修改：
 
+解压：
 ```
-tar zxvf gnome-background-loongson.tar.z
-```
-
-对解压后的源码包做修改，找到f21.xml脚本或者gnome-background相关名的脚本观察脚本内的代码，对此修改壁纸文件，当修改完后，仍压缩成
-gnome-background-loongson.tar.xz文件，压缩
-
-例１．
-```shell
-xz  -d gnome-background-loongson.tar.xz  //解压.xz
-tar -xvf gnome-background-loongson.tar   //解压.tar
-
-或者：
 tar xvJf gnome-background-loongson.tar.xz   //直接解压.tar.xz或者-xJf
 ```
-例２．
-```
-tar zcvf gnome-background-loongson.tar.z gnome-background-loongson   //解压.tar.z
-```
 
+对解压后的源码包做修改，找到f21.xml脚本或者gnome-background相关名的脚本观察脚本内的代码，对此修改壁纸文件。
+在解压后包的目录找到gnome-background.xml文件
+
+输出结果：
+
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; <img src="http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground.png" alt="GitHub" title="GitHub,Social Coding" width="600" height="310" />
+
+
+
+
+
+当修改完后，仍压缩成gnome-background-loongson.tar.xz文件，压缩
 
 在SRPMS目录下就出现了，你修改后的rpm背景壁纸包。
 
 
 进入rpmbuild/SPECS,用户用之前安装的rpmbuild工具，
 
-例1.
+
 ```
-tar -Jcf gnome-background-loongson    //压缩.tar.xz
-```
-例2.
-```
-rpmbulid -ba gnome-background-loongson.spec   //压缩成.tar.z
+tar -Jcf gnome-background-loongson.tar.xz gnome-background-loongson   //压缩.tar.xz
 ```
 
 
