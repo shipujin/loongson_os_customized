@@ -26,9 +26,8 @@ gnome-backgroundgson.bz.ta
 ```
 yum provides */*background*
 ```
+
 输出结果为：
-
-
 &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; <img src="https://github.com/lina-not-linus/loongson_os_customized/blob/master/codeSnippet/provides_background.png" alt="GitHub" title="GitHub,Social Coding" width="600" height="310" />
 
 
@@ -44,24 +43,35 @@ sudo scp root@192.168.30.145:/home/qwe/data/repo/fedora-source/gnome-background-
 rpm -ivh gnome-background-loongson.src.rpm
 ```
 会发现在rpmbuild目录下的SOUxxxx的目录下已出现gnome-background-loongson.bz.tar源码包，解压后对此包修改：
+
 ```
-bz -xvf gnome-background-loongson.bz.tar
+tar zxvf gnome-background-loongson.tar.z
 ```
-
-
-
-
-
-
 
 对解压后的源码包做修改，找到f21.xml脚本或者gnome-background相关名的脚本观察脚本内的代码，对此修改壁纸文件，当修改完后，仍压缩成
-gnome-background-loongson.bz.tar文件，压缩
+gnome-background-loongson.tar.xz文件，压缩
+
+例１．
+```
+xz  -d gnome-background-loongson.tar.xz  //解压.xz
+tar -xvf gnome-background-loongson.tar   //解压.tar
+
+或者：
+tar xvJf gnome-background-loongson.tar.xz   //直接解压.tar.xz或者-xJf
+```
+例２．
+```
+tar zcvf gnome-background-loongson.tar.z gnome-background-loongson   //解压.tar.z
 ```
 
+进入rpmbuild/SPECS,用户用之前安装的rpmbuild工具，
+例1.
 ```
-进入rpmbuild/SPExxx,用户用之前安装的rpmbuild工具，
+tar -Jcf gnome-background-loongson    //压缩.tar.xz
 ```
-rpmbulid -ba gnome-background-loongson.spec
+例2.
+```
+rpmbulid -ba gnome-background-loongson.spec   //压缩成.tar.z
 ```
 在SRPMS目录下就出现了，你修改后的rpm背景壁纸包。
 
