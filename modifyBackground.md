@@ -58,8 +58,16 @@ tar xvJf gnome-background-loongson.tar.xz   //直接解压.tar.xz或者-xJf
 
 &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; ![结果](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground.png)
 
+其中<filename>里的“@BACKGROUNDDIR@”的内容是图片的位置，若不知道“@BACKGROUNDDIR@”路径，可以搜索后面的“@BACKGROUNDDIR@/Blinds.jpg”图片的位置，现在的位置在gnome-background.xml位置目录
+```
+find . -name Blinds.jpg
+```
+![搜索文件](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground_2.png)
+则现在就可以确定“@BACKGROUNDDIR@”的意思就是和此.xml文件相同的目录路径，现在可以对包内的壁纸图片进行替换修改。
 
-
+&emsp; &emsp; 当继续观察此.xml文件，发现了一个有趣的地址变量，其中一个图片地址竟然不知图片的，而是一个.xml脚本的地址。
+![发现](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground_3.png)
+          
 
 
 
