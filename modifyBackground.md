@@ -30,7 +30,7 @@ yum provides */*background*
 
 输出结果为：
 
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; <img src="https://github.com/lina-not-linus/loongson_os_customized/blob/master/codeSnippet/provides_background.png" alt="GitHub" title="GitHub,Social Coding" width="600" height="310" />
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; <img src="http://oswj0e3on.bkt.clouddn.com/provides_background.png" alt="GitHub" title="GitHub,Social Coding" width="600" height="310" />
 
 
 可以看出包含“gnome-background-properties/”下控制壁纸脚本的文件，所包含在哪一个包内，这时就可以从同步的源码包里
