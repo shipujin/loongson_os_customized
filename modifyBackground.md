@@ -24,7 +24,7 @@ gnome-backgroundgson.bz.ta
 ## 二.正式开始对定制化壁纸修改，对源码包的修改
 首先已经知道要你需要修改的目标是“桌面背景图片”，之后你通过如下命令找到包含设置背景壁纸图片的脚本文件：
 ```
-yum prives */*background*
+yum provides */*background*
 ```
 输出结果为：
 
