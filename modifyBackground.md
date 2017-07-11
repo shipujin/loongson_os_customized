@@ -63,10 +63,18 @@ tar xvJf gnome-background-loongson.tar.xz   //直接解压.tar.xz或者-xJf
 find . -name Blinds.jpg
 ```
 ![搜索文件](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground_2.png)
+
 则现在就可以确定“@BACKGROUNDDIR@”的意思就是和此.xml文件相同的目录路径，现在可以对包内的壁纸图片进行替换修改。
 
 &emsp; &emsp; 当继续观察此.xml文件，发现了一个有趣的地址变量，其中一个图片地址竟然不知图片的，而是一个.xml脚本的地址。
 ![发现](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground_3.png)
+
+有一个壁纸路径是“@BACKGROUNDDIR@/adwaita-timed.xml”，你继续在此目录下打开/adwaita-timed.xml脚本文件，
+![脚本内容](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground_4.png)
+
+其中脚本的头部标签<starttime>里是壁纸图片的生效时间，<duration>是图片的持续时间，单位是(单位/s)，<file>同样是图片的地址路径。
+![脚本下面内容](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground_5.png)
+
           
 
 
