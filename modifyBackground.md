@@ -42,7 +42,7 @@ sudo scp root@192.168.30.145:/home/qwe/data/repo/fedora-source/gnome-background-
 ```
 rpm -ivh gnome-background-loongson.src.rpm
 ```
-会发现在rpmbuild目录下的SOUxxxx的目录下已出现gnome-background-loongson.bz.tar源码包，解压后对此包修改：
+会发现在rpmbuild目录下的SOURCES的目录下已出现gnome-background-loongson.bz.tar源码包，解压后对此包修改：
 
 ```
 tar zxvf gnome-background-loongson.tar.z
@@ -52,7 +52,7 @@ tar zxvf gnome-background-loongson.tar.z
 gnome-background-loongson.tar.xz文件，压缩
 
 例１．
-```
+```shell
 xz  -d gnome-background-loongson.tar.xz  //解压.xz
 tar -xvf gnome-background-loongson.tar   //解压.tar
 
@@ -64,7 +64,12 @@ tar xvJf gnome-background-loongson.tar.xz   //直接解压.tar.xz或者-xJf
 tar zcvf gnome-background-loongson.tar.z gnome-background-loongson   //解压.tar.z
 ```
 
+
+在SRPMS目录下就出现了，你修改后的rpm背景壁纸包。
+
+
 进入rpmbuild/SPECS,用户用之前安装的rpmbuild工具，
+
 例1.
 ```
 tar -Jcf gnome-background-loongson    //压缩.tar.xz
@@ -73,10 +78,6 @@ tar -Jcf gnome-background-loongson    //压缩.tar.xz
 ```
 rpmbulid -ba gnome-background-loongson.spec   //压缩成.tar.z
 ```
-在SRPMS目录下就出现了，你修改后的rpm背景壁纸包。
-
-
-
 
 
 
