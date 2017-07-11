@@ -56,7 +56,9 @@ tar xvJf gnome-background-loongson.tar.xz   //直接解压.tar.xz或者-xJf
 
 输出结果：
 
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; <img src="http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground.png" alt="GitHub" title="GitHub,Social Coding" width="600" height="310" />
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; ![结果](http://oswj0e3on.bkt.clouddn.com/loongson_os_customized/codeSnippet/provides_background_gnomebackground.png)
+
+
 
 
 
