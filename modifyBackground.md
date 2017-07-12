@@ -91,7 +91,13 @@ find . -name Blinds.jpg
 ```
 tar -Jcf gnome-background-loongson.tar.xz gnome-background-loongson   //压缩.tar.xz
 ```
+进入SPACES目录对rpmbuild对gnome-background-loongson.space文件进行
+```
+rpmbuild -ba gnome-background-loongson.spaces
+```
 
+则可生成rpm包，加入到软件仓库，并**更新软件仓库**
+### 自此壁纸包已修改好，并加入到软件仓库，更新仓库
 
 
 >第一步：同步fedora.repo的源，包和包的源代码，repo/source。
