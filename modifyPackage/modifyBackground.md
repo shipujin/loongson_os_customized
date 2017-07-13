@@ -37,17 +37,17 @@ yum provides */*background*
 去找到包含“控制壁纸脚本文件”的包。重复第三步：
 
 此时在makerpm的家目录，在你做的ftp服务器里复制出，包含“控制壁纸脚本文件”的包gnome-background-loongson.src.rpm包，
-```
+```vim
 sudo scp root@192.168.30.145:/home/qwe/data/repo/fedora-source/gnome-background-loongson.src.rpm .
 ```
 对.src.rpm包安装，依次安装出现的依赖的包，解决安装时出现的依赖的问题，
-```
+```vim
 rpm -ivh gnome-background-loongson.src.rpm
 ```
 会发现在rpmbuild目录下的SOURCES的目录下已出现gnome-background-loongson.bz.tar源码包，与在SPECS目录下出现gnome-background-loongson.spec文件，解压SOURCES目录下的gnome-background-loongsonbz.tar包，并做出对此包修改：
 
 解压：
-```
+```vim
 tar xvJf gnome-background-loongson.tar.xz   //直接解压.tar.xz或者-xJf
 ```
 
