@@ -6,7 +6,7 @@ gnome-backgroundgson.bz.ta
 -properties/"下的xxx.xml文件，是可以修改桌面壁纸的脚本。
 
 下面代码就是“/usr/share/gnome-background-properties/f21.xml“的xxx.xml文件：
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
