@@ -1,9 +1,6 @@
 # 对loongson系统桌面壁纸图片的修改
 ## 一.壁纸修改前的知识准备
-对主机上安装的loongson系统文件分析，发现在"/usr/share/gnome-backgrou
-gnome-backgroundgson.bz.ta
-
--properties/"下的xxx.xml文件，是可以修改桌面壁纸的脚本。
+对主机上安装的loongson系统文件分析，发现在"/usr/share/gnome-background-properties/"下的xxx.xml文件，是可以修改桌面壁纸的脚本。
 
 下面代码就是“/usr/share/gnome-background-properties/f21.xml“的xxx.xml文件：
 ```xml
