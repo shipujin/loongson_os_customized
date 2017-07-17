@@ -51,7 +51,7 @@ distroverpkg=centos=release       #判定当前系统的信息
 # in /etc/yum.repos.d    # 可以往下附加配置信息，也可以放在各配置文件中
 # 可通过man yum.conf进行详细查看
 ```
-下面是对比的loongsonf13的/etc/yum.conf文件结构，上下两个yum.conf文件做出对比：
+### 下面是对比的loongsonf13的/etc/yum.conf文件结构，上下两个yum.conf文件做出对比：
 ```
 [main]
 cachedir=/var/cache/yum/$basearch/$releasever
