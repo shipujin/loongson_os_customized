@@ -74,4 +74,36 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch
 
 ```
 
+### 下面是loongson的/etc/yum.repos.d/fedora.repo配置文件，做出上下的XXX.repo文件的结构对比：
+```
+[fedora]
+name=Fedora $releasever - $basearch
+enable=1
+gpgcheck=0
+baseurl=http://ftp.loongnix.org/os/Fedora13-o32/RPMS/
+        http://10.2.5.28/ftp/download/os/Fedora13-o32/RPMS/
+
+[updates]
+name=Fedora $releasever - $basearch
+enable=1
+gpgcheck=0
+baseurl=http://ftp.loongnix.org/os/Fedora13-o32/Updates/RPMS/
+        http://10.2.5.28/ftp/download/os/Fedora13-o32/Updates/RPMS
+
+```
+
+由于此没有feodra-source的repo，决定自己写一个repo文件，通过[fedoea]、[update]的baseurl的地址路径写一个source的repo文件：
+
+所要加的格式内容：
+```
+[fedora-source]
+name=Fedora $releasever - $source
+enable=1
+gpgcheck=0
+baseurl=http://ftp.loongnix.org/os/Fedora13-o32/SRPMS/
+        http://10.2.5.28/ftp/download/os/Fedora13-o32/SRPMS/
+```
+发现还是不能够同步source源码包，并且yum源并爆出错误警告，打开source的地址http://ftp.loongnix.org/os/Fedora13-o32/SRPMS/
+后发现，没有repodate文件目录，所以无法同步,还是修改什么，再wget源码包，地址还是用source上的地址。
+
 ### 三. 更多的使用：man yum.conf，一切以man为准。
