@@ -34,7 +34,7 @@ installonly_limit=5       #一次安装的程序限制是５个
 bugtracker_url=http://bugs.centos.org/set_project.php?                            #可以上下对比下uel
 project_id=19&ref=http://bugs.centos.org/bug_report_page.php?  category=yum       #bug追踪的路径
 
-distroverpkg=centos=release       #判定当前系统的信息
+distroverpkg=centos-release       #判定当前系统的信息
 
 
 # This is the default, if you make this bigger yum won‘t see if themetadata
