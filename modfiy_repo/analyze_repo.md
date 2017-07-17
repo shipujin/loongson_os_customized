@@ -44,7 +44,7 @@ mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&ar
 
 enabled=1       #设置为１表示repo文件定义的的源是启用的，０为禁用定义的源。
 
-metadata_expire=7d        #默认带着就好
+metadata_expire=7d        #默认带着就好，缓存存放时间，７d－>7天
 
 gpgcheck=1        #gpgcheck项表示这个repo中下载的rpm包进行gpg的校验，为了确定rpm包的来源是有效的和安全的
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch       #定义用于校验的gpg密钥
