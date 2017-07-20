@@ -3,7 +3,7 @@
 对于镜像列表里没有源码包，但软件仓库内有rpm二进制包：“loongson-themes”包，是对系统默认主题设置的包。
 最后找到一个工具命令“rom2cpio”，用于将rpm软件包转换成cpio的文件。
 ```
-rpm2cpio loongson-themes-版本号.rpm | cpio -dev
+rpm2cpio loongson-themes-版本号.rpm | cpio -div
 ```
 
 现在就可以看到loongson-themes包内的文件了，打开包文件目录，看到是大部分都是标题栏的图标和壁纸。
