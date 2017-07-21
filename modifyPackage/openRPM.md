@@ -13,3 +13,9 @@ rpm2cpio loongson-themes-版本号.rpm | cpio -div
 继续研究，搜到“rpmrebuild　-pe”命令可以直接对rpm包的二进制文件起作用，对于spec文件的作用，看来还需要再对spec结构要有更深的认识。
 
 继续查资料。
+
+今天上午查资料终于找到了，使用“rpmrebuild　-ep”去直接修改rpm包去做包，不通过源码做修改。原理就是通过：
+```
+rpmrebuild -ep Package
+```
+直接进入了Package.spac文件，做修改后，退出，它会自动打包成rpm包。
