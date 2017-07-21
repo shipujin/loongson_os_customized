@@ -22,7 +22,7 @@ yumdownloader Package
 
 5. 打开rpm包：
 ```
-rpm2cpio Package | cpio -dio
+rpm2cpio Package | cpio -div
 ```
 
 6. 搜索某个文件在哪一个rpm包内：
