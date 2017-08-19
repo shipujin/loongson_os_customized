@@ -1,6 +1,11 @@
 ### yum缓存
 
-yum缓存的好处就是你在非网络下可以安装已缓存的软件包，并解决依赖关系。yum的缓存设置在/etc/yum.conf文件里：
+yum缓存的好处就是你在非网络下可以安装已缓存的软件包，并解决依赖关系。
+“cachedir=”为缓存地址，在“keepcache=”1为开启，0为关闭。推荐是开启前先“yum clean all”清除缓存以减少缓存大小，正常安装软件包和依赖，
+
+已测试在安装后电脑上有缓存。位置在“/var/cache/yum/$basearch/$releasever”。
+
+yum的缓存设置在/etc/yum.conf文件里：
 ```
 [main]
 cachedir=/var/cache/yum/$basearch/$releasever
@@ -26,7 +31,6 @@ installonly_limit=3
 # PUT YOUR REPOS HERE OR IN separate files named file.repo
 # in /etc/yum.repos.d
 ```
-在keepcache关键
 
 ### 安装非仓库的软件包显示信息
 1. 在定制化loongson系统对系统仓库没有的软件包做迁移时，在rpm.pbone.net下载的对应的源码包，在loongson编译并打包、
