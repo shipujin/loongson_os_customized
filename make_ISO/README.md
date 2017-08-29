@@ -5,3 +5,4 @@
 使用pungi工具链接：http://blog.csdn.net/ericzhong83/article/details/7369539
 3. 第三个是由于此loongson系统仓库没有livecd-tools和spin-kickstarts的包，所以需要在rpm.pbone.net下载源码包在本龙芯机迁移编译后再使用，
 需要修改livecd-create工具后自写ks打ISO。
+4. 最后实在没办法做ISO了，只能取一个没有意义的方式做ISO，直接对ISo镜像打开做修改，这个不是和ubuntu制作镜像时的方式不同。
