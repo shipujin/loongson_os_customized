@@ -44,7 +44,9 @@ mkisofs -relaxed-filenames -allow-lowercase -graft-points -allow-multidot -pad -
      6. 输入命令`initrd initrd`加载initrd文件
      7. 输入命令`run vmlinux console=tty`启动U盘中的系统
 
-   
+可以依据这两个博客链接：
+ 1. http://blog.csdn.net/chenyulancn/article/details/16985559
+ 2. http://blog.csdn.net/houjian914/article/details/69817524
   
  
 
