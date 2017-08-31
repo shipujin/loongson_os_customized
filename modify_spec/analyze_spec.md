@@ -81,18 +81,35 @@ BuildArch:用于表示此软件依赖的架构，若你要打包的文件不依�
 
 BuildRoot:在%install阶段(%build阶段之后)，文件安装到此位置。Fedora不需要此标签，EPEL5还需要它。默认情况下，根目录为: %{_topdir}/BUILDROOT/
 
-BuildRequires:编译软件包所需要的依赖包列表，已逗号分隔
+BuildRequires:编译软件包所需要的依赖包列表，以逗号分隔
 
-Requires:     安装软件包所需要的依赖包列表，已逗号分隔
+Requires:     安装软件包所需要的依赖包列表，以逗号分隔
 
 %description: 程序的详细描述，使用美式英语，每行小于80字符，空行为新段落
 
+%prep:        打包准备阶段执行的一些命令，例如解压源码包、打补丁等，以便开始编译。一般来说仅包含“%autosetup”,如果源码包需要解压并切换至NAME目录，则需要输入“%autosetup -n NAME”
+
+%build：       包含构建阶段执行的命令，构建完成后就开始后续的安装。程序需要包含有如何编译的介绍。
+
+%install：     包含安装阶段执行的命令，命令从%{_builddir}目录安装到%{buildroot}目录
+
+%check:        包含测试阶段执行的命令。此阶段在%install阶段之后执行，一般包含“make test”或“make check”命令。此阶段要与%build分开，以便在需要时忽略测试
+
+%clean：        清理安装目录的命令。此阶段是在fedora中是多余的，仅针对EPEL。通常仅包含： rm -rf %{buildroot}
+
+
+%file:          需要被打包/安装的文件列表
+
+%changelog:     rpm变更日志。但需要注意的是，不是软件本身的变更日志
+
+%ExcloudeArch:  排除某些架构。如果该软件不能在某些架构上正常编译或者安装，可以使用此标签排除某些架构
+
+%ExclusiveArch: 列出该软件包独占的架构
+
+
+
+
+
 %prep:        打包准备阶段执行的一些命令、解压源码包、打补丁，以便开始接下来的编译
-
-
-
 ```
-
-
-
 依据fedora手册学习打包与自己写spec文件链接：https://fedoraproject.org/wiki/How_to_create_an_RPM_package/zh-cn
