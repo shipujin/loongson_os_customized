@@ -19,5 +19,5 @@ loongson-themes包)，但发现同步的源码包仓库里没有loongson-themes�
 但还定制化还是需要进行下去。
 
 当时我想RPM包就是一种封装方式，所以就去网上去查直接对RPM包做修改。
-直接对RPM包做修改，研究如下：
+直接对RPM包做修改，研究如下：rpmrebuile工具直接对RPM修改![rpmrebuile工具直接对RPM修改](https://github.com/lina-not-linus/loongson_os_customized/blob/master/openRPMmodify/openRPM.md)
 
