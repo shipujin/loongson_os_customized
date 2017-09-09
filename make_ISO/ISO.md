@@ -27,7 +27,7 @@ loongson-themes包)，但发现同步的源码包仓库里没有loongson-themes�
 
 当做的差不多桌面环境的修改后，开始准备ISO的制作，当我去fedora手册上记录的方法安装：livecd-tools、spin-kickstarts这两个工具时，发现仓库里没有这两个工具，需要去下载源码包在龙芯机上编译，需要自己解决依赖问题，当我解决依赖后，发现livecd-create使用也有问题，当解决使用问题，开始写ks文件，都是坑，我就自己写，搜索系统自己安装的所以RPM包，输入到ks文件里，发现仓库里根本就没有里面的相当一部分包。
 
-#### fedora手册方法制作ISO，失败
+> #### fedora手册方法制作ISO，失败
 
 ### 仿照Ubuntu系统制作ISO的方式做ISO：直接拆ISO，改完再恢复到做成ISO
 
