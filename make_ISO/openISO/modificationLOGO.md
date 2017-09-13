@@ -38,5 +38,11 @@ rpm -ql Fedora-logos | grep -P '\bstart-here.png$'
 
 并查看以下文件： /usr/share/icons/System/icon-theme.cache
 ```
+在图形界面里观察是否替换成功。
+
+
+
+
+
 
 
