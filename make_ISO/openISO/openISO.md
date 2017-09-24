@@ -47,6 +47,8 @@ mkisofs -relaxed-filenames -allow-lowercase -graft-points -allow-multidot -pad -
 可以依据这两个博客链接：
  1. http://blog.csdn.net/chenyulancn/article/details/16985559
  2. http://blog.csdn.net/houjian914/article/details/69817524
+ 3. http://www.latelee.org/using-gnu-linux/ubuntu-livecd.html
+ 4. https://help.ubuntu.com/community/LiveCDCustomization
   
  
 
