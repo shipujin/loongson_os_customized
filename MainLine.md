@@ -1,6 +1,6 @@
 # 系统定制化计划
 
-### fedora手册去系统定制化
+### 一.fedora手册去系统定制化
 >第一步：同步fedora.repo的源，包和包的源代码，repo/source。
 
 >第二步：对包内文件的修改。
@@ -11,10 +11,8 @@
 
 >第五步：做成liveCD，ISO文件livecd-creator。
 
-***
-***
 
-### Ubuntu定制liveCD的方式去系统定制化
+### 二.Ubuntu定制liveCD的方式去系统定制化
 > 直接去解压ISO镜像内的文件，直接对解压的文件做修改，最后在做成ISO文件
 
 ***
