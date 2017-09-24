@@ -30,20 +30,6 @@ mkisofs -relaxed-filenames -allow-lowercase -graft-points -allow-multidot -pad -
 ```
 
 
-## ISOU盘安装方法
-- PMON固件
-   - U盘安装
-      需要选择Usb Cdrom选项进行安装，在选择此选项之后需要等待5分钟
-- 昆仑固件
-   - U盘安装
-     1. 将机器的启动方式修改成mksh的方式
-     2. 输入命令`connect`
-     3. 输入命令`device`查看连接的设备
-     4. 输入命令`cd fs1:`进入U盘
-     5. 输入命令`cd boot`进入boot目录
-     6. 输入命令`initrd initrd`加载initrd文件
-     7. 输入命令`run vmlinux console=tty`启动U盘中的系统
-
 可以依据这两个博客链接：
  1. http://blog.csdn.net/chenyulancn/article/details/16985559
  2. http://blog.csdn.net/houjian914/article/details/69817524
