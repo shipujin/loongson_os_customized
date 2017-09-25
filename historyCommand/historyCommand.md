@@ -36,7 +36,8 @@ ip a  //因未安装net-tools，所以无ifconfig命令　
 
 scp lhosts root@192.168.30.233:~  //把目录下的lhosts发送到ip192.168.30.233的主机的root用户家目录
 
-sudo scp -r fedora/ 192.168.30.142:/home/qwe/data/repo  //同上，把一个目录传到ip192.168.30.233的主机/home下的/qwe/data/repo目录
+sudo scp -r fedora/ 192.168.30.142:/home/qwe/data/repo  //同上，把一个目录传到ip192.168.30.233的
+                                                        //主机/home下的/qwe/data/repo目录
 
 yumdownloader　packageName   //用yumdownloader命令下载packageName
 ```
