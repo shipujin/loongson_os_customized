@@ -58,7 +58,7 @@ rpm.pbone.net   //若有未同步下来的包，在rpm.phone.net网站搜索下�
 
 5. 但现在我在龙梦的live-10系统/etc/mock/目录没有看到关于loongson龙芯的相关配置－－>>所以龙芯机没办法使用mock工具编译
 
-### 最后根据其他架构的cfg文件，模仿了一个cfg文件，链接 ![loongson.cfg]()。
+### 最后根据其他架构的cfg文件，模仿了一个cfg文件，链接 ![loongson.cfg](https://github.com/lina-not-linus/loongson_os_customized/blob/master/configurationFILE/mock_cfg/fedoraLoongson.cfg)。
 
 ###### 例：假如编译一个Fedora15 64位系统的软件包来举例（则对应的配置文件为：fedora-15-x86_64.cfg），相关的命令是：
 
